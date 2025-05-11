@@ -145,7 +145,7 @@ int main(int argc, char* argv[]) {
     }
 
     if (found) {
-        cout << "[Lee] Path found with length: " << dist[end.y][end.x] << endl;
+        cout << "Path found with length: " << dist[end.y][end.x] << endl;
         ofstream out("output/output_grid.txt");
         
         // Backtrack shortest path
