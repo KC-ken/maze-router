@@ -1,10 +1,12 @@
 # Maze Router
 
-This project implements a basic maze routing algorithm (Lee's Algorithm and Soukup's Algorithm) in C++
+This project implements a grid-based maze router using **Lee's algorithm** and **Soukup's algorithm**, supporting shortest path visualization.
 
 ## Features
 - Grid-based maze routing
-- Avoids obstacles
+- Only visualizes the **shortest path**, not all visited nodes
+- Supports custom start/end positions and obstacle placement
+- ASCII output for terminal-based visualization
 - Outputs path length if routing is successful
 
 ## Project Structure
@@ -44,6 +46,17 @@ g++ -std=c++11 -o router main.cpp
 ```
 
 ## Output
-- Prints the path length if a route is found.
-- Example: `Path found with length: 14`
+- Prints the path length and ASCII Visualization if a route is found
+- Example:
+```bash
+[Lee] Path found with length: 14
+
+Visualized Path Grid:
+....**E
+.###*##
+....***
+######*
+S******
+```
+- Saves ASCII Visualization to output/output_grid.txt
 
